@@ -1,0 +1,108 @@
+.section-program {
+  background-color: #111517;
+  width: 100%;
+  min-height: 1892px;
+
+  .section-program-text__name {
+    font-family: $extrabold-font-stack;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+    padding-bottom: 42px;
+    color: white;
+  }
+
+  .section-program-list {
+    padding-left: 66px;
+    padding-right: 50px;
+
+    .section-program-list__item {
+      margin-left: 28px;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 2px;
+        height: calc(100% - -7%);
+        background-color: #546264;
+        left: -28px;
+        top: 18px;
+        position: absolute;
+      }
+
+      &::after {
+        content: '';
+        display: inline-block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(255, 107, 8);
+        left: -32px;
+        top: 10px;
+        position: absolute;
+      }
+
+      &:last-child::before {
+        content: none;
+      }
+
+      .list-item__title {
+        font-family: $bold-font-stack;
+        font-size: 15px;
+        line-height: 29px;
+        font-weight: 600;
+        color: $main-bg-color;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 14px;
+      }
+
+      .list-item__subtitle {
+        font-family: $main-font-stack;
+        font-size: 13px;
+        line-height: 29px;
+        color: $orange-text-color;
+        margin: 0;
+        margin-bottom: 14px;
+
+        &::before {
+          content: '\2014 ';
+          width: 25px;
+          height: 3px;
+          color: rgb(255, 107, 8);
+          margin-right: 10px;
+        }
+      }
+
+      .list-item__text {
+        font-family: $main-font-stack;
+        font-size: 11px;
+        line-height: 20px;
+        color: #4b4d4e;
+        margin: 0;
+        margin-bottom: 14px;
+      }
+
+      .list-item__black {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #111517;
+        position: absolute;
+        z-index: 3;
+        top: 20px;
+        left: -32px;
+      }
+    }
+  }
+
+  .section-program-picture {
+    position: relative;
+    right: -159px;
+    top: -58px;
+  }
+}

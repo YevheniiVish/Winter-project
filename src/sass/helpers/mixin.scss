@@ -1,0 +1,32 @@
+@mixin flex-center($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'spbetween' {
+    justify-content: space-between;
+    align-items: center;
+  } @else if $type== 'sparound' {
+    justify-content: space-around;
+    align-items: center;
+  }
+  @else if $type== 'column' {
+    flex-direction: column;
+  }
+}
+
+@mixin insert-item($type: 'all') {
+  display: inline-block;
+  content: '';
+
+  @if $type== 'all' {
+    background-color: $main-text-color;
+    width: 24px;
+    height: 2px;
+  }
+}

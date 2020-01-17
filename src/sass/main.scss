@@ -1,0 +1,18 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helpers/variables';
+@import 'helpers/mixin';
+@import 'helpers/placeholders';
+@import 'normalize.scss';
+@import 'base.scss';
+@import 'fonts.scss';
+// -------header----------
+@import 'components/header';
+// --------main-----------
+@import 'components/section-main';
+@import 'components/section-major-issues';
+@import 'components/section-do';
+@import 'components/section-program';
+@import 'components/section-choose';
+@import 'components/section-teacher.scss';
