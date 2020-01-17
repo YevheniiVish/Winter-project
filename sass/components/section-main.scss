@@ -1,0 +1,133 @@
+
+.wrapper-bg {
+  background-image: url(../../images/Shape-bg-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 536px;
+  min-height: 536px;
+  margin-bottom: 32px;
+}
+
+.section-main-text_title {
+  margin-top: 60px;
+}
+
+.section-text {
+  font-family: $main-font-stack;
+
+  .section-text__name {
+    font-family: $extrabold-font-stack;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    margin: $margin-zero;
+  }
+
+  .section-main-text__name {
+    color: $main-text-color;
+  }
+
+  .section-main-text__description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .text-description {
+    font-family: $bold-font-stack;
+    font-size: 15px;
+    line-height: 21px;
+    
+    
+    .text-description__item_gray {
+      color: $grey-text-color;
+    }
+
+    .text-description__item_black {
+      color: $main-text-color;
+      font-weight: bold;
+    }
+
+    .text-description__item_orange {
+      color: $orange-text-color;
+      font-weight: bold;
+    }
+  }
+}
+
+.section-main-btn {
+  width: 246px;
+  height: 44px;
+  font-size: 11px;
+  background-color: $orange-text-color;
+  color: $main-bg-color;
+  text-transform: uppercase;
+  text-align: center;
+  border-style: solid;
+  font-weight: bold;
+  border-width: 2px;
+  border-color: #ff6b08;
+  margin-left: 17px;
+  margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #d35526;
+    cursor: pointer;
+  }
+}
+
+.section-main-img {
+  @include flex-center($type: 'all');
+}
+
+.section-main-list {
+  @extend %list;
+  @include flex-center($type: 'column');
+
+  .section-main-list__item {
+    @include flex-center($type: 'all');
+    width: 100%;
+    width: 215px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    .svg-icon {
+      width: 60px;
+      height: 60px;
+      border-width: 2px;
+      border-color: #ff6b08;
+      border-style: solid;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 4px;
+        height: 38px;
+        background-color: white;
+        opacity: 1;
+        right: -3px;
+        top: calc(30px - 19px - 2px);
+
+
+      }
+
+      .svg-icon__item {
+        width: 60px;
+        height: 60px;
+        fill: #ff6b08;
+        padding: 5px;
+      }
+    }
+
+    .svg-card-title {
+      font-family: $bold-font-stack;
+      font-size: 13px;
+      line-height: 20px;
+      word-break: break-word;
+      margin-left: 14px;
+      margin-right: 35px;
+    }
+  }
+}

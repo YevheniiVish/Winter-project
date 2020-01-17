@@ -1,0 +1,68 @@
+.section-major-issues {
+  background-image: url(../../images/bg2-black.png);
+  background-size: 100% 518px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 518px;
+
+  .section-magor-text {
+    color: $main-bg-color;
+    padding-top: 54px;
+
+    .section-magor-text__name {
+      font-family: $extrabold-font-stack;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 800;
+      margin-top: 0;
+
+      .section-magor-text__name-orange {
+        color: $orange-text-color;
+      }
+    }
+  }
+
+  .text-description {
+    background: white;
+    width: 100%;
+    min-height: 463px;
+    position: absolute;
+    max-width: 284px;
+    z-index: 2;
+
+    .text-description-major {
+      font-family: $bold-font-stack;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 800;
+      color: $main-text-color;
+      padding-left: 30px;
+      counter-reset: section;
+      padding-right: 20px;
+      box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+
+      .text-description-magor__item {
+        @extend %list;
+
+        .list-item__text {
+          margin: 4px 0;
+        }
+      }
+
+      .text-description-magor__item::before {
+        counter-increment: section;
+        content: '\2014   'counter(section, decimal-leading-zero);
+        font-size: 14px;
+        line-height: 29px;
+        width: 25px;
+        height: 2px;
+        color: $orange-text-color;
+      }
+
+      .list {
+        @extend %list;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.section-teacher {
+  top: -514px;
+  background: white;
+
+  .section-teacher-text__name {
+    margin-bottom: 42px;
+    margin-top: 90px;
+    text-align: left;
+  }
+
+  .section-teacher-aside {
+    .section-teacher-aside__subject {
+      font-family: $extrabold-font-stack;
+      font-size: 16px;
+      line-height: 29px;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(133, 133, 133, 0.3);
+    }
+
+    .section-teacher-aside__slogan {
+      margin-bottom: 15px;
+
+      .slogan-list__item {
+        list-style: none;
+        background: url(../../images/check.png) no-repeat 0 4px;
+        padding-left: 36px;
+
+        .slogan-list__item-text {
+          font-family: $bold-font-stack;
+          font-size: 13px;
+          line-height: 16px;
+          text-align: left;
+          font-weight: 600;
+          margin-top: 0;
+          margin-bottom: 20px;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 2px;
+        background-color: rgb(255, 107, 8);
+        margin-left: 14px;
+      }
+    }
+  }
+
+  .section-teacher-aside__text {
+    font-family: $main-font-stack;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $grey-text-color;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .section-teacher-aside__excerpt {
+    font-family: $main-font-stack;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    color: $orange-text-color;
+
+    .section-teacher-aside__excerpt-link {
+      color: $orange-text-color;
+    }
+  }
+}
