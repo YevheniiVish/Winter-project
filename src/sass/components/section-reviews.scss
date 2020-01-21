@@ -45,6 +45,7 @@
           color: $orange-text-color;
           text-align: center;
           font-weight: 800;
+          margin: 0;
         }
 
         .section-reviews-inner-text__desc {
@@ -52,7 +53,32 @@
           font-size: 11px;
           line-height: 17px;
           color: #858585;
+          margin: 0 0 22px;
+          text-align: center;
         }
+
+        .section-reviews-inner-text__excerpt {
+          margin: 0;
+          font-family: $medium-font-stack;
+          font-size: 11px;
+          line-height: 20px;
+          color: $main-text-color;
+          text-align: center;
+
+          &-link {
+            color: $orange-text-color;
+          }
+        }
+      }
+    }
+
+    .section-reviews-list {
+      display: flex;
+      margin: auto;
+      padding-top: 15px;
+    
+      .section-reviews-list__item {
+        margin-right: 17px;
       }
     }
   }
