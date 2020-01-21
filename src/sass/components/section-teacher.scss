@@ -1,6 +1,7 @@
 .section-teacher {
-  top: -514px;
   background: white;
+  min-height: 1200px;
+  box-shadow: none;
 
   .section-teacher-text__name {
     margin-bottom: 42px;
@@ -41,7 +42,7 @@
         display: inline-block;
         width: 25px;
         height: 2px;
-        background-color: rgb(255, 107, 8);
+        background-color: $orange-text-color;
         margin-left: 14px;
       }
     }

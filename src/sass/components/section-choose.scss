@@ -1,6 +1,11 @@
 .section-choose {
   background: transparent;
-  top: -402px;
+  position: absolute;
+  top: 5341px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+
 
   .section-choose-text__name {
     display: inline-block;
