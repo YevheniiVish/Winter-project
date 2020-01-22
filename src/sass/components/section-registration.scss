@@ -1,0 +1,37 @@
+.section-registr-container {
+  background-image: url(../../images/photos/bgregistr1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 540px;
+  padding: 56px 0 56px;
+
+  .section-registr-text {
+    .section-registr-text__title {
+      font-family: $extrabold-font-stack;
+      font-size: 14px;
+      line-height: 26px;
+      color: $main-bg-color;
+      text-align: center;
+      margin: 0;
+
+      &-orange {
+        color: $orange-text-color;
+      }
+    }
+
+    .section-registr-text__subtitle {
+      font-family: $semibold-font-stack;
+      font-size: 11px;
+      line-height: 20px;
+      text-align: center;
+      color: $main-bg-color;
+      margin: 30px 0 0;
+      
+
+      &-orange {
+        color: $orange-text-color;
+      }
+    }
+  }
+}
