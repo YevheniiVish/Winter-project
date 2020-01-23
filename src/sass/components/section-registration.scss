@@ -27,10 +27,63 @@
       text-align: center;
       color: $main-bg-color;
       margin: 30px 0 0;
-      
 
       &-orange {
         color: $orange-text-color;
+      }
+    }
+  }
+
+  .section-registr-form {
+    display: block;
+    width: auto;
+    height: 282px;
+
+    .form-registr {
+      display: flex;
+      flex-direction: column;
+      padding: 32px 0;
+
+      .form-registr-item {
+        display: block;
+        height: 50px;
+        margin: 0 0 30px;
+
+        input {
+          display: inline-block;
+          height: 50px;
+          width: 100%;
+          padding-left: 15px;
+          background: transparent;
+
+          &::placeholder {
+            font-family: $semibold-font-stack;
+            font-style: normal;
+            font-size: 13px;
+            line-height: 37px;
+            font-weight: 700;
+            color: $main-bg-color;
+          }
+        }
+      }
+    }
+
+    button {
+      display: inline-block;
+      width: 250px;
+      height: 48px;
+      font-size: 11px;
+      font-weight: 700;
+      background-color: $orange-text-color;
+      color: $main-bg-color;
+      border: none;
+      text-transform: uppercase;
+      text-align: center;
+      margin-left: 17px;
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
       }
     }
   }
