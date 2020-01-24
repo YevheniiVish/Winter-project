@@ -1,0 +1,40 @@
+.section-telephone {
+  width: 100%;
+  min-height: 182px;
+
+  .section-telephone-number {
+    @include flex-center('column');
+    align-items: center;
+    justify-content: center;
+    padding-top: 34px;
+
+    .section-telephone-number__social {
+      @include flex-center('all');
+      margin-bottom: 20px;
+      
+
+      .section-telephone-number__social-phone {
+        width: 20px;
+        height: 20px;
+        fill: $orange-text-color;
+      }
+
+      .section-telephone-number__social-no {
+        font-family: $semibold-font-stack;
+        font-size: 18px;
+        line-height: 37px;
+        font-weight: 600;
+        color: #111517;
+        text-decoration: none;
+      }
+    }
+
+    .section-telephone-number__logo {
+      flex-direction: column;
+
+      .section-telephone-number__logo-img {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
