@@ -12,21 +12,33 @@
         <div class="section-telephone-number__logo page-nav">
           <a href="#" class="section-telephone-number__logo-img">
             <img
-              src="../images/instagram1.png"
+              src="../images/photos/instagram1.png"
               height="37"
               width="37"
               alt="instagram"
             />
           </a>
 
-          <a href="#" class="page-nav__logo logo-site">
-            <img
-              src="../images/logo1.png"
-              height="31"
-              width="79"
-              alt="Logo-site"
-              class="logo-site__img"
-            />
+          <a href="#" class="section-telephone-number__logo-site page-nav__logo logo-site">
+             <picture>
+                      <source
+                      media = " (max-width: 767px) "
+                      srcset = "../images/photos/logo1.png"
+                    />
+                    <source
+                      media = " (min-width: 768px) "
+                      srcset = "../images/photos/logo2.png"
+                    />
+                   
+                        <img
+                        src="../images/photos/logo1.png"
+                        height="31"
+                        width="79"
+                        alt="Logo-site"
+                        class="logo-site__img"
+                      />
+                    </picture>
+                    </a>
           </a>
         </div>
       </div>

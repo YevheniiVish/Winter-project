@@ -1,53 +1,114 @@
-// .header-container-content {
-//   position: absolute;
-//   left: 50%;
-//   margin-left: -142px;
-// }
+.page-nav {
+  @include flex-center('spbetween');
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  // position: relative;
+  .nav {
+    margin: 0;
+    min-width: 196px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
 
-  .container-content {
-    width: 284px;
-    margin: 0 auto;
+    .nav-menu {
+      display: none;
+    }
 
-    .page-nav {
-      @include flex-center('spbetween');
+    .nav-btn {
+      display: none;
+    }
 
-      .nav {
-        margin: 0;
+    .nav-burger {
+      display: inline-block;
+      background-color: $main-text-color;
+      width: 24px;
+      height: 2px;
+      position: relative;
+      cursor: pointer;
 
-        .nav-btn {
-          border: none;
-          outline: none;
-          content: none;
-          color: $main-bg-color;
-          background: $main-bg-color;
-        }
+      &::before {
+        @include insert-item('all');
+        position: absolute;
+        top: 5px;
+      }
 
-        .nav-burger {
-          display: inline-block;
-          background-color: $main-text-color;
-          width: 24px;
-          height: 2px;
-          position: relative;
-          cursor: pointer;
+      &::after {
+        @include insert-item('all');
+        position: absolute;
+        top: -5px;
+      }
+    }
+  }
+}
 
-          &::before {
-            @include insert-item('all');
-            position: absolute;
-            top: 5px;
+@media (min-width: 768px) {
+  .page-nav {
+    @include flex-center('spbetween');
+    height: 90px;
+    margin-top: 20px;
+
+    .nav {
+      min-width: 325px;
+      display: flex;
+      flex-direction: row;
+
+      .nav-btn {
+        display: inline-block;
+        width: 252px;
+        height: 50px;
+        font-family: 'Tahoma' sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        text-transform: uppercase;
+        border: 2px solid #ff6b08;
+        color: $orange-text-color;
+        background-color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-nav {
+    @include flex-center('spbetween');
+    height: 110px;
+
+    .nav {
+      min-width: 932px;
+
+      .nav-menu {
+        display: block;
+
+        .nav-menu__link {
+          text-decoration: none;
+          font-family: 'Tahoma' sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 1.2;
+          color: #b9b9b9;
+          text-transform: uppercase;
+          margin-right: 50px;
+
+          &:hover,
+          &:focus {
+            color: $orange-text-color;
           }
-
-          &::after {
-            @include insert-item('all');
-            position: absolute;
-            top: -5px;
-          }
         }
+      }
+
+      .nav-btn {
+        font-family: 'Tahoma' sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.2;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .nav-burger {
+        display: none;
       }
     }
   }

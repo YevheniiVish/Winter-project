@@ -1,0 +1,39 @@
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+
+    .container-content {
+      width: 284px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+
+    .container-content {
+      width: 688px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+
+    .container-content {
+      width: 1210px;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .container {
+    width: 1680px;
+
+    .container-content {
+      width: 1338px;
+    }
+  }
+}

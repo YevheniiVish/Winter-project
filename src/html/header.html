@@ -2,16 +2,33 @@
   <div class="header-container-content container-content">
     <div class="page-nav">
       <a href="#" class="page-nav__logo logo-site">
-        <img
-          src="../images/logo1.png"
-          height="31"
-          width="79"
-          alt="Logo-site"
-          class="logo-site__img"
-        />
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="../images/photos/logo1.png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../images/photos/logo2.png"
+          />
+
+          <img
+            src="../images/photos/logo1.png"
+            alt="Logo-site"
+            class="logo-site__img"
+          />
+        </picture>
       </a>
-      <nav class="page-nav__navigation nav">
-        <button class="nav-btn"></button>
+      <nav class="page-nav-navigation nav">
+        <div class="page-nav-navigation__menu nav-menu">
+          <a class="nav-menu__link" href="#">Программа обучения</a>
+          <a class="nav-menu__link" href="#">о нас</a>
+          <a class="nav-menu__link" href="#">варианты обучения</a>
+          <a class="nav-menu__link" href="#">контакты</a>
+        </div>
+        <button class="page-nav__navigation-btn nav-btn">
+          консультация по телефону
+        </button>
         <div class="nav-burger"></div>
       </nav>
     </div>

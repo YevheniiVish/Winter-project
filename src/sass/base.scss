@@ -24,3 +24,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  margin: 0 auto;
+
+  .container-content {
+    margin: 0 auto;
+  }
+}

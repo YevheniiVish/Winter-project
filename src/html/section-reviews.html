@@ -8,11 +8,17 @@
       <div class="section-reviews-wrapper ">
         <div class="section-reviews-wrapper__card section-reviews-inner">
           <div class="section-reviews-inner-image ">
-            <img
-              class="section-reviews-inner-image__img"
-              src="../images/review1mob.png"
+            <picture class="section-reviews-inner-image__img">
+              <source
+              media="(min-width:1280px)"
+              srcset="../images/photos/review2desk.png"
+            />
+             <img
+              class="section-reviews-inner-image__img-reviews"
+              src="../images/photos/review1mob.png"
               alt="#"
             />
+          </picture>
             <svg class="section-reviews-inner-image__svg">
               <use href="../images/icons/symbol-defs.svg#icon-vk"></use>
             </svg>
