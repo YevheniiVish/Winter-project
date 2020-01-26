@@ -72,3 +72,22 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .section-teacher {
+    background: white;
+    min-height: 820px;
+
+    .section-teacher-content {
+      position: relative;
+
+      .section-teacher-aside {
+        display: grid;
+        grid-template-columns: 408px;
+        position: absolute;
+        right: 0;
+        top: 287px;
+      }
+    }
+  }
+}
