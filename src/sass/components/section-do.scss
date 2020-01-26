@@ -83,3 +83,32 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .section-do {
+    background-color: white;
+    min-height: 1192px;
+
+    .section-do-text {
+      padding-top: 150px;
+
+      .section-do-text__name {
+        font-size: 26px;
+      }
+    }
+
+    .card-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      width: 605px;
+      margin: 0 auto;
+
+      .card-list__item {
+        margin: 0 auto;
+        width: 291px;
+        height: 275px;
+      }
+    }
+  }
+}

@@ -126,51 +126,69 @@
 }
 
 @media (min-width: 768px) {
-  .section-main-container {
+  .section-main {
     background-image: url(../../images/photos/Shape-bg-2.png);
     background-repeat: no-repeat;
-    background-position: center top;
     background-size: cover;
-    height: 569px;
+    max-height: 569px;
+    background-position: 0 137%;
+  }
 
-    .wrapper-bg {
-      background-image: none;
+  .section-main-container {
+    // background-repeat: no-repeat;
+    // background-position: center top;
+    // background-size: cover;
+    // min-height: 569px;
+    .main-content {
       position: relative;
-      display: flex;
-      height: 320px;
-      margin-top: 50px;
 
-      .section-text {
-        margin: 0;
+      .wrapper-bg {
+        background-image: none;
+        position: relative;
+        display: flex;
+        height: 320px;
+        margin-top: 50px;
 
-        .section-main-text__name {
-          font-size: 28px;
-          font-weight: 800;
+        .section-text {
+          margin: 0;
+
+          .section-main-text__name {
+            font-size: 28px;
+            font-weight: 800;
+          }
         }
-      }
 
-      .section-main-btn {
-        position: absolute;
-        margin: 0;
-        bottom: 144px;
-      }
-
-      .section-main-img {
-        .section-main-img__picture-site {
+        .section-main-btn {
           position: absolute;
-          top: 0;
-          right: 0;
+          margin: 0;
+          bottom: 144px;
+        }
+
+        .section-main-img {
+          .section-main-img__picture-site {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
         }
       }
-    }
 
-    
-    .section-main-list {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 51px;
-      justify-content: space-between;
-      width: 688px;
+      .section-main-list {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 51px;
+        justify-content: space-between;
+        width: 688px;
+        margin: 0;
+        position: absolute;
+        top: 477px;
+
+        .section-main-list__item {
+          margin: 0;
+          position: relative;
+          left: 35px;
+        }
+      }
     }
   }
 }

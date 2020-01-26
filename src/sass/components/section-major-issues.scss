@@ -47,6 +47,10 @@
 
         .list-item__text {
           margin: 4px 0;
+
+          .list-item__text-t1 {
+            display: none;
+          }
         }
       }
 
@@ -62,6 +66,44 @@
 
       .list {
         @extend %list;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section-major-issues {
+    background-image: url(../../images/photos/bg2-black_tablet.png);
+    background-size: 100% 333px;
+    background-position: top;
+    min-height: 333px;
+
+    .section-magor-text {
+      padding-top: 25px;
+      width: 688px;
+
+      .section-magor-text__name {
+        padding-right: 236px;
+        font-size: 26px;
+        line-height: 33px;
+      }
+
+      .text-description {
+        max-width: 688px;
+        min-height: 311px;
+
+        .text-description-major {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+          padding: 38px 80px;
+
+          .text-description-magor__item {
+            .list-item__text-t1 {
+              display: inline;
+            }
+          }
+        }
       }
     }
   }
