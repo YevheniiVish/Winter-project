@@ -65,6 +65,10 @@
           color: $main-text-color;
           text-align: center;
 
+          &-tab {
+            display: none;
+          }
+
           &-link {
             color: $orange-text-color;
           }
@@ -91,51 +95,47 @@
           display: none;
         }
 
-        // .section-reviews-list__item-img {
-        // }
-      }
-
-      .section-reviews-list__ctrl-prew,
-      .section-reviews-list__ctrl-next {
-        position: absolute;
-        top: 37px;
-        width: 24px;
-        height: 20px;
-        border: none;
-        background-color: transparent;
-
-        &::before {
-          content: '';
-          --s: 12px;
-          --bd: 2px solid #ff6b08;
-          width: var(--s);
-          height: var(--s);
-          border-left: var(--bd);
-          border-top: var(--bd);
+        .section-reviews-list__ctrl-prew,
+        .section-reviews-list__ctrl-next {
           position: absolute;
-          top: 50%;
-          transform: translate(-50%, -50%) rotate(-45deg);
+          top: 37px;
+          width: 24px;
+          height: 20px;
+          border: none;
+          background-color: transparent;
+
+          &::before {
+            content: '';
+            --s: 12px;
+            --bd: 2px solid #ff6b08;
+            width: var(--s);
+            height: var(--s);
+            border-left: var(--bd);
+            border-top: var(--bd);
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+          }
+
+          &::after {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 2px;
+            background-color: #ff6b08;
+            display: flex;
+            margin: auto;
+          }
         }
 
-        &::after {
-          content: "";
-          display: inline-block;
-          width: 18px;
-          height: 2px;
-          background-color: #ff6b08;
-          display: flex;
-          margin: auto;
+        .section-reviews-list__ctrl-prew {
+          left: 0;
         }
-      }
 
-      .section-reviews-list__ctrl-prew {
-        left: 0;
-      }
-
-      .section-reviews-list__ctrl-next {
-        transform: rotate(180deg);
-        right: 0;
-        
+        .section-reviews-list__ctrl-next {
+          transform: rotate(180deg);
+          right: 0;
+        }
       }
     }
   }
